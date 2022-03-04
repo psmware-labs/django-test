@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  django-test:
+    image: django-test
+    container_name: django-test
+    hostname: django-test
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: sleep infinity
